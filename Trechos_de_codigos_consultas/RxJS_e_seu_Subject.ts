@@ -28,6 +28,8 @@ this.debounce.
 // na declaração da classe:
 // export class UserListComponente imlements OnInit, OnDestroy
  
+// o método abaixo libera o Subject, evitando gastos desnecessários de memória,
+// um problema famoso e conhecido como 'memory leak'
 ngOnDestroy(): void {
     this.debounce.unsubscribe();
 }

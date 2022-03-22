@@ -10,7 +10,9 @@ export class UserListResolver implements Resolve<Observable<User[]>> {
 
     resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<User[]>{
         const userName = route.params.userName;
-        return this.service.listFromUser(userName);
+        return this.service.listFromUser(userName, 1); 
+        // método alterado com params para
+        //limitar o números de elementos na página
     }
 }
 
