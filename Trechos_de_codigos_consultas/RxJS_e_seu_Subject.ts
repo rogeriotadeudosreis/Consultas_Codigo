@@ -1,4 +1,5 @@
 /**
+ * RxJS e seu subject
  * Motivação para ser implementado: melhorar a performace da aplicação
  * Patther debouce, ex: esperar digitar a palavra inteira primeiro no search, 
  * para somente depois fazer a requisição com a busca
