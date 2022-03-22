@@ -1,9 +1,6 @@
 /**
- * Exemplo de arquivo resolver para ser implementado em qualquer projeto angular
- * 
- * Motivação: carregar os dados antes da renderização do componente no template
- * 
- * Não esquecer de fazer os devidos imports
+ * Exemplo de arquivo resolver para ser implementado em qualquer projeto angular 
+ * Motivação: carregar os dados antes da renderização do componente no template 
  */
 
 @Injectable({ providedIn: 'root'})
