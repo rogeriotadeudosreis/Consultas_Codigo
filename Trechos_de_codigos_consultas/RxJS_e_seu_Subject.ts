@@ -23,6 +23,14 @@ this.debounce.
 .pipe(debounceTime(300))
 .subscribe(filter => this.filter = filter);
 
+// destruir o componente e limpar a memória
+// na declaração da classe:
+// export class UserListComponente imlements OnInit, OnDestroy
+ 
+ngOnDestroy(): void {
+    this.debounce.unsubscribe();
+}
+
 /**
  * o subject, usando a propriedade debounceTime(300), a sacada é ele aguardar o usuário
  * terminar de digitar para fazer a buscar, não fazendo uma busca a cada tecla pressionada.
