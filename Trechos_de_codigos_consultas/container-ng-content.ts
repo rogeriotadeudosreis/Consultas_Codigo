@@ -23,7 +23,7 @@
 
 /**
  * <div class="card border-light text-center">
- *      <h4 class="card-header"> {{ title }}</h4> 
+ *      <h4 class="card-header" *ngIg="title"> {{ title }}</h4> 
  *      <div class="card-block text-justify">
  *      </div>
  * 

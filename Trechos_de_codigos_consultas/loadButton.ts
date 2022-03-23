@@ -43,10 +43,12 @@
  * dentro do ngOnInit: this.userName = this.activatedRoute.snapshot.params.userName;
  * 
  * criando o método:
+ * 
  * load(){
  *  this.service
  * .listFromUserPaginated(this.userName, ++ this.currentePage)
  * .subscribe(users => {
+ *     this.filter = ''; // limpando o filtro
  *     this.users = this.users.concat(users);
  *      if(users.length) this.hasMore = false;
  * })
